@@ -8,6 +8,7 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
 COPY ["SampleGet/SampleGet.csproj", "SampleGet/"]
+COPY ["*.sln", "SampleGet/"]
 RUN dotnet restore "SampleGet/SampleGet.csproj"
 COPY . .
 WORKDIR "/src/SampleGet"
