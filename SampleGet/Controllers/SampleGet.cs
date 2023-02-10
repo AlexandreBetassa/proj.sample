@@ -9,7 +9,7 @@ namespace SampleGet.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            return Ok("");
+            return Ok("ok");
         }
     }
 }
